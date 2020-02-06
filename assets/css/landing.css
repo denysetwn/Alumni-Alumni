@@ -1,0 +1,501 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+#header{
+    position: sticky;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right, #E0FFF9, #EBFFFB);
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+}
+.nav-bar{
+    display: flex;
+    padding: 20px 40px;
+}
+.nav-logo img{
+    width: 50px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    float: right;
+    margin-top: -8px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav-links ul a{
+    color: #03A595;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn{
+    color: #fff;
+    padding: 8px 30px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #03A595;
+    display: block;
+    margin: 23px auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*------------------------- Banner -------------------*/
+#banner{
+    height: 90vh;
+    background-image: linear-gradient(to right, #A3F1E2, #E0FFF9);
+}
+.col-banner{
+    display: flex;
+}
+.left-col-banner{
+    flex-basis: 50%;
+    padding: 20px 40px;
+}
+.left-col-banner h1{
+    font-size: 28px;
+    font-weight: bolder;
+    color: #076658;
+    margin-top: 110px;
+}
+.left-col-banner p{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #484848;
+    font-weight: bold;
+}
+.left-col-banner .text-chat-banner{
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #03A595;
+}
+.btn-banner{
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-banner span{
+    display: inline-block;
+    margin-right: 10px;
+    animation: panah 1.5s linear infinite;
+}
+.btn-banner:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+
+@keyframes panah{
+    0%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
+.right-col-banner{
+    flex-basis: 50%;
+    padding: 20px 40px;
+    text-align: center;
+}
+.right-col-banner img{
+    width: 100%;
+}
+.img-cekungan{
+    width: 100%;
+}
+/*----------------------- Social Media --------------------*/
+#social-media{
+    height: 50vh;
+    text-align: center;
+    background: #fff;
+}
+.container{
+    padding: 60px 0;
+}
+.container p{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #484848;
+    font-weight: bold;
+}
+.social-icons{
+    margin-top: 50px;
+}
+.social-icons img{
+    margin: 0 30px;
+    width: 80px;
+    cursor: pointer;
+    transition: 1s;
+}
+.social-icons img:hover{
+    transform: translateY(-30px);
+}
+
+/*----------------- Berita dan Kuisioner ------------------*/
+#container{
+    background-image: linear-gradient(to right, #A3F1E2, #E0FFF9);
+    padding: 40px auto;
+    height: 200vh;
+}
+#container h1{
+    font-size: 40px;
+    color: #03A595;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*---------------------- Berita ------------------------*/
+.berita{
+    margin: 40px 60px;
+}  
+.gallery-cell {
+    width: 66%;
+    height: 80vh;
+    margin-right: 10px;
+    counter-increment: gallery-cell;
+    position: relative;
+}
+.gallery-cell img{
+    margin-right: 10px;
+    width: 100%;
+    height: 80vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.container-berita{
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+}
+.container-berita p{
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;    
+    max-height: 62px;     
+    -webkit-line-clamp: 1; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+    -webkit-box-orient: vertical;
+}
+.container-berita h3{
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;    
+    max-height: 62px;     
+    -webkit-line-clamp: 3; /* Write the number of 
+                              lines you want to be 
+                              displayed */
+    -webkit-box-orient: vertical;
+}
+.container-berita-lainnya{
+    margin: 60px auto;
+    text-align: center;
+}
+
+.btn-lainnya{
+    color: #fff;
+    padding: 10px 40px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-lainnya:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+
+/*------------------------ Kuisioner --------------------*/
+.container-kuisioner{
+    height: 70vh;
+    background-image: linear-gradient(to right, #FBFFFE, #E0FFF9);
+    margin: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+}
+.col-kuisioner{
+    display: flex;
+}
+.left-col-kuisioner{
+    flex-basis: 35%;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+.left-col-kuisioner img{
+    margin: 20% 0;
+    width: 80%;
+}
+.right-col-kuisioner{
+    flex-basis: 65%;
+}
+.right-col-kuisioner img{
+    top: 0;
+    float: right;
+    width: 6%;
+    margin-right: 5vh;
+}
+.title-kuisioner{
+    float: left;
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin: 12vh 5vh;
+    font-weight: bolder;
+    color: #03A595;
+}
+.desc-kuisioner{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin: -5vh 5vh 12vh 5vh;
+    line-height: 4vh;
+    letter-spacing: .5px;
+    color: #484848;
+}
+.btn-kuisioner{
+    float: left;
+    margin: 0 40%;
+    color: #fff;
+    padding: 10px 40px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-kuisioner:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+/*---------------------------- Footer ---------------------*/
+#footer{
+    height: 30vh;
+    background: #03A595;
+}
+.col-footer{
+    display: flex;
+    height: 23vh;
+}
+.left-col-footer{
+    margin: 3vh 25vh;
+    flex-basis: 40%;
+    border-right: 1.5px solid #fff;
+}
+.left-col-footer img{
+    width:40%;
+    margin: 5vh;
+}
+.right-col-footer{
+    flex-basis: 60%;
+    padding: 1.3vh;
+}
+.follow{
+    font-size: 15px;
+    font-weight: bold;
+    margin: .5vh;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.right-col-footer .fa{
+    margin: 2vh;
+    font-size: 15px !important;
+    color: #fff !important;
+    font-weight: bold;
+    padding-right: 2vh;
+}
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin: 2.2vh 0 .3vh 0;
+    letter-spacing: .7px;
+}
+.fa-copyright{
+    font-size: 13px;
+    color: #fff;
+}
+
+/*--------------------- Popup Login ---------------------*/
+ .popup-login {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 110px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+.container-popup-login {
+    position: relative;
+    background-image: linear-gradient(to right, #83E2CF, #E0FFF9);
+    margin: auto;
+    padding: 5vh;
+    max-width: 60%;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.left-col-login{
+    flex-basis: 50%;
+}
+.left-col-login img{
+    width: 95%;
+    margin: 4vh 0 4vh 0;
+}
+.right-col-login{
+    flex-basis: 50%;
+    padding: 0 3% 0 2%;
+}
+.title-login{
+    color: #076658;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5% 0 10% 0;
+    text-shadow: 3px 2px rgba(146, 223, 214, 0.9);
+    text-align: left;
+    letter-spacing: 2px;
+}
+.form-box input{
+    width: 100%;
+    margin-bottom: 6%;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 2% 1%;
+    background: transparent;
+    border-bottom: 1px solid #03A595;
+}
+.custom-checkbox{
+    margin-top: -3%;
+}
+.custom-checkbox-label{
+    color: #21796C;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 12%;
+}
+.forgot{
+    color: #21796C;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    font-size: 13px;
+    margin-bottom: 12%;
+}
+.hubungi-kami{
+    color: #21796C;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    float: right;
+    margin-right: -16vh;
+}
+.btn-masuk-login{
+    width: 100%;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5% 0 5% 0;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-masuk-login:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+
+
+
+
+
+  

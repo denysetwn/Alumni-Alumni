@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #E0FFF9;
+}
+#header{
+    position: sticky;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right, #E0FFF9, #EBFFFB);
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+}
+.nav-bar{
+    display: flex;
+    padding: 20px 40px;
+}
+.nav-logo img{
+    width: 50px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    float: right;
+    margin-top: -8px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px 0 20px;
+}
+.nav-links ul a{
+    color: #03A595;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links ul li i{
+    color: #03A595;
+    text-decoration: none;
+    font-size: 20px !important;
+    font-weight: bold;
+}
+#photo-profile-header{
+    width: 6vh;
+    height: 6vh;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: -7px;
+    border-radius: 50%;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #03A595;
+    display: block;
+    margin: 21px auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*------------------ Container personal-chat --------------------*/
+#container-personal-chat{
+    display: flex;
+    height: 90vh;
+}
+.left-col-personal-chat{
+    flex-basis: 20%;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 30px 0 30px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    overflow: hidden;
+    height: 85vh;
+}
+.menghilangkan-scroll{
+    overflow: auto;
+    margin:0 -90px 0 0;
+    padding-right:70px;
+    height: 85vh;
+}
+#tanpa-scroll{
+    overflow: hidden;
+}
+.left-col-personal-chat h1{
+    padding: 4vh 3vh;
+    color: #03A595;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #90DBD4;
+}
+.left-col-personal-chat h1 i{
+    float: right;
+    font-size: 22px !important;
+    cursor: pointer;
+    transition: .5s;
+}
+.left-col-personal-chat h1 i:hover{
+    color: #04D6C1;
+}
+.left-col-personal-chat p{
+    padding: 2.5vh 3vh;
+    background: #F6FEFC;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #90DBD4;
+}
+
+
+
+
+.middle-col-personal-chat{
+    flex-basis: 60%;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 0 0 0 ;
+    height: 85vh;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    overflow: hidden;
+}
+.container-personal-chat{
+    height: 75vh;
+    margin: 0 4vh; 
+    overflow: auto;
+    margin:0 -20px 0 0;
+    padding:0vh 5vh;   
+}
+
+.isi-chat{
+    margin: 3vh 0;
+}
+.text-isi-chat{
+    background: #03A595;
+    border-radius: 10px 10px 0 10px;
+    padding: 2vh;
+}
+.text-isi-chat p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: .5px;
+    text-align: justify;
+}
+.img-profile-isi-chat{
+    flex-basis: 10%;
+    text-align: center;
+    align-self: center;
+}
+.img-profile-isi-chat img{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+}
+.waktu-kirim-chat{
+    margin: 1vh 0;
+}
+.waktu-kirim-chat p{
+    font-size: 10px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.isi-chat-orang{
+    margin: 3vh 0;
+}
+.text-isi-chat-orang{
+    background: #F4F4F4;
+    border-radius: 10px 10px 10px 0;
+    padding: 2vh;
+}
+.text-isi-chat-orang p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: .5px;
+    text-align: justify;
+}
+.img-profile-isi-chat-orang{
+    flex-basis: 10%;
+    text-align: center;
+    align-self: center;
+}
+
+.waktu-kirim-chat-orang{
+    margin: 1vh 0;
+    text-align: right;
+}
+.waktu-kirim-chat-orang p{
+    font-size: 10px;
+    font-weight: bold;
+    color: #484848;
+}
+
+
+
+.comment{
+    background: #F6FEFC;
+    display: flex;
+    border-top: 1px solid #03A595;
+}
+.img-profile-comment{
+    flex-basis: 10%;
+    padding: 2vh 5vh;
+}
+.img-profile-comment img{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+}
+.form-control-comment{
+    flex-basis: 70%;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1vh 2vh 2vh 0;
+    margin: 2vh 0 2vh -1vh;
+    border: none;
+}
+.form-control-comment::placeholder{
+    color: #03A595;
+    font-size: 16px;
+    font-weight: bold;
+}
+.icon-comment{
+    flex-basis: 20%;
+    text-align: right;
+    padding: 3vh 5vh 4vh 0;
+}
+.icon-comment a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #03A595;
+}
+.icon-comment a i{
+    margin: auto 1.5vh;
+}
+
+
+
+.right-col-personal-chat{
+    flex-basis: 20%;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 30px 0 30px;
+    height: 85vh;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    overflow: hidden;
+}
+.right-col-personal-chat img{
+    height: 22vh;
+    width: 22vh;
+    border-radius: 50%;
+    margin: 4vh 9vh;
+}
+.details-profile{
+    text-align: center;
+}
+.details-profile h1{
+    color: #076658;
+    font-weight: bold;
+    font-size: 25px;
+}
+.details-profile h2{
+    color: #484848;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 1vh;
+}
+.details-profile p{
+    color: #484848;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5vh;
+}
+.details-profile span{
+    color: #fff;
+    padding: 4px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #03A566;
+    border-radius: 20px;
+  
+}
+
+/*---------------------------- Footer ---------------------*/
+#footer{
+    height: 30vh;
+    background: #03A595;
+}
+.col-footer{
+    display: flex;
+    height: 23vh;
+}
+.left-col-footer{
+    margin: 3vh 25vh;
+    flex-basis: 40%;
+    border-right: 1.5px solid #fff;
+}
+.left-col-footer img{
+    width:40%;
+    margin: 5vh;
+}
+.right-col-footer{
+    flex-basis: 60%;
+    padding: 1.3vh;
+}
+.follow{
+    font-size: 15px;
+    font-weight: bold;
+    margin: .5vh;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.right-col-footer .fa{
+    margin: 2vh;
+    font-size: 15px !important;
+    color: #fff !important;
+    font-weight: bold;
+    padding-right: 2vh;
+}
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin: 2.2vh 0 .3vh 0;
+    letter-spacing: .7px;
+}
+.fa-copyright{
+    font-size: 13px;
+    color: #fff;
+}

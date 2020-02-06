@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #E0FFF9;
+}
+#header{
+    position: sticky;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-image: linear-gradient(to right, #E0FFF9, #EBFFFB);
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+}
+.nav-bar{
+    display: flex;
+    padding: 20px 40px;
+}
+.nav-logo img{
+    width: 50px;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    float: right;
+    margin-top: -8px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav-links ul a{
+    color: #03A595;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn{
+    color: #fff;
+    padding: 8px 30px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #03A595;
+    display: block;
+    margin: 23px auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*----------------------------- Pengaturan ---------------------------*/
+#container-profile{
+    background-image: linear-gradient(to right, #E0FFF9, #EBFFFB);
+    height: 150vh;
+    margin: 5vh 22vh;
+    padding: 7vh 10vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    background: #fff;
+}
+.foto-profile-setting{
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+.foto-profile-setting h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #03A595;
+}
+.col-profile-setting{
+    padding: 5vh 0;
+    display: flex;
+}
+.left-col-profile-setting{
+    flex-basis: 20%;
+}
+.left-col-profile-setting img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+.right-col-profile-setting{
+    flex-basis: 80%;
+    align-self: center;
+}
+.btn-ubah{
+    color: #fff;
+    padding: 8px 30px;
+    margin-left: 5vh;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-ubah:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+.tentang-setting{
+    margin-bottom: 5vh;
+}
+.tentang-setting h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #03A595;
+}
+.col-tentang-setting{
+    display: flex;
+    padding: 5vh 0;
+}
+.left-col-tentang-setting{
+    flex-basis: 20%;
+}
+.left-col-tentang-setting p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #484848;
+    margin: 2vh 2vh 9vh 5vh;
+}
+.right-col-tentang-setting{
+    flex-basis: 80%;
+}
+.form-box input{
+    width: 80%;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
+    margin: 0 0 5vh 5vh;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 2% 2%;
+    border-radius: 10px;
+    box-shadow: none ;
+    background: #F6FEFC;
+    border-top: 2px solid #D4DBD9;
+    border-left: 2px solid #D4DBD9;
+}
+.ubah-sandi-setting{
+    margin-bottom: 5vh;
+    margin-top: -5vh;
+}
+.ubah-sandi-setting h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #03A595;
+}
+.content-ubah-sandi-setting p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #484848;
+    margin: 6vh 2vh 5vh 5vh;
+}
+.btn-change{
+    color: #fff;
+    padding: 8px 30px;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    cursor: pointer;
+    margin-left: 16px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-change:hover{
+    background: #04D6C1;
+    color: #fff;
+}
+.btn-change .fa{
+    margin-right: 2vh;
+}
+.button-confirmation{
+    margin: 10vh 5vh 2vh 0;
+}
+.btn-batalkan-login{
+    float: right;
+    width: 20%;
+    color: #03A595;
+    padding: 8px 30px;
+    margin: 5% 3% 5% 0;
+    font-weight: bold;
+    border: 0;
+    background: #E0FFF9;
+    border: 2px solid #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-batalkan-login:hover{
+    background: rgb(230, 252, 247);
+    color: #04D6C1;
+    border: 2px solid #04D6C1;
+}
+.btn-simpan-login{
+    float: right;
+    width: 20%;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 5% 0 5% 0;
+    font-weight: bold;
+    border: 0;
+    background: #03A595;
+    border: 2px solid #03A595;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(146, 223, 214, 0.9);
+    transition: .5s;
+}
+.btn-simpan-login:hover{
+    background: #04D6C1;
+    color: #fff;
+    border: 2px solid #04D6C1;
+}
+
+
+/*---------------------------- Footer ---------------------*/
+#footer{
+    height: 30vh;
+    background: #03A595;
+}
+.col-footer{
+    display: flex;
+    height: 23vh;
+}
+.left-col-footer{
+    margin: 3vh 25vh;
+    flex-basis: 40%;
+    border-right: 1.5px solid #fff;
+}
+.left-col-footer img{
+    width:40%;
+    margin: 5vh;
+}
+.right-col-footer{
+    flex-basis: 60%;
+    padding: 1.3vh;
+}
+.follow{
+    font-size: 15px;
+    font-weight: bold;
+    margin: .5vh;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.right-col-footer .fa{
+    margin: 2vh;
+    font-size: 15px !important;
+    color: #fff !important;
+    font-weight: bold;
+    padding-right: 2vh;
+}
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    margin: 2.2vh 0 .3vh 0;
+    letter-spacing: .7px;
+}
+.fa-copyright{
+    font-size: 13px;
+    color: #fff;
+}
+
